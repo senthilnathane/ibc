@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Business Circle | Curated Ecosystem for Indian Founders in Dubai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #0A5C36;
+            --primary-medium: #1A7D4D;
+            --primary-light: #2E8B57;
+            --neutral-dark: #1A1A1A;
+            --neutral-medium: #4A4A4A;
+            --neutral-light: #F5F5F5;
+            --neutral-white: #FFFFFF;
+            --accent-gold: #C9A96E;
+            --accent-light: #F8F9FA;
+            --font-primary: 'Inter', sans-serif;
+            --font-secondary: 'Source Serif Pro', serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            color: var(--neutral-dark);
+            line-height: 1.6;
+            background-color: var(--neutral-white);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        
+        .logo-circle {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--neutral-white);
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .logo-text {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-dark);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--neutral-medium);
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-dark);
+        }
+        
+        .nav-cta {
+            background-color: var(--primary-dark);
+            color: var(--neutral-white) !important;
+            padding: 10px 22px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-dark);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, var(--neutral-light) 0%, rgba(245, 245, 245, 0.8) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            max-width: 700px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-family: var(--font-secondary);
+            font-size: 48px;
+            line-height: 1.2;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+        
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--neutral-medium);
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+        
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            margin-top: 40px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-dark);
+            color: var(--neutral-white);
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-medium);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-dark);
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s;
+            border: 2px solid var(--primary-dark);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--primary-dark);
+            color: var(--neutral-white);
+        }
+        
+        .hero-image {
+            position: absolute;
+            right: 0;
+            top: 100px;
+            width: 45%;
+            height: 400px;
+            background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 100px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-family: var(--font-secondary);
+            font-size: 36px;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--neutral-medium);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 28px;
+            color: var(--primary-dark);
+            margin-bottom: 25px;
+        }
+        
+        .about-points {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .about-point {
+            background-color: var(--neutral-light);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-medium);
+        }
+        
+        .about-point h4 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+        
+        .about-image {
+            height: 400px;
+            background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+        
+        /* Revenue Engines */
+        .engines-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .engine-card {
+            background-color: var(--neutral-white);
+            border-radius: 8px;
+            padding: 40px 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--primary-dark);
+        }
+        
+        .engine-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .engine-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(10, 92, 54, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: var(--primary-dark);
+            font-size: 24px;
+        }
+        
+        .engine-card h3 {
+            font-size: 22px;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        
+        /* Business Model */
+        .revenue-model {
+            background-color: var(--neutral-light);
+            padding: 80px 0;
+        }
+        
+        .revenue-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .revenue-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .revenue-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: var(--neutral-white);
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .revenue-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(10, 92, 54, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .revenue-text h4 {
+            color: var(--primary-dark);
+            margin-bottom: 5px;
+        }
+        
+        .highlight-box {
+            background-color: var(--primary-dark);
+            color: var(--neutral-white);
+            padding: 40px;
+            border-radius: 8px;
+        }
+        
+        .highlight-box h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        /* Founder Section */
+        .founder-profile {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .founder-image {
+            height: 350px;
+            background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+        
+        .founder-details h3 {
+            font-size: 32px;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+        
+        .founder-title {
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        
+        .founder-experience {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .experience-item {
+            background-color: var(--neutral-light);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--neutral-light);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        
+        .contact-form-container {
+            grid-column: span 2;
+        }
+        
+        .contact-form {
+            background-color: var(--neutral-white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--neutral-dark);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-primary);
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .contact-option {
+            background-color: var(--neutral-white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-option h4 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--neutral-white);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo-circle {
+            width: 40px;
+            height: 40px;
+            background-color: var(--neutral-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-dark);
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .footer-logo-text {
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--neutral-white);
+        }
+        
+        .footer-column h4 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--neutral-white);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .hero-image {
+                width: 50%;
+                height: 350px;
+            }
+            
+            .engines-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .revenue-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .founder-profile {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form-container {
+                grid-column: span 1;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--neutral-white);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s;
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero-image {
+                position: relative;
+                width: 100%;
+                height: 300px;
+                margin-top: 40px;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+            }
+            
+            .about-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .engines-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-header h2 {
+                font-size: 32px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .section-header h2 {
+                font-size: 28px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-circle">IBC</div>
+                <div class="logo-text">Indian Business Circle</div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About IBC</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li><a href="#business-model">Business Model</a></li>
+                    <li><a href="#investors">Investors</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section / Home -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Indian Business Circle</h1>
+                <p class="hero-subtitle">A curated business ecosystem for Indian founders and professionals in Dubai. IBC is long-term business infrastructure that monetizes access, learning, and visibility within a trusted network.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn-primary">Apply for Membership</a>
+                    <a href="#business-model" class="btn-secondary">View Business Model</a>
+                </div>
+            </div>
+            <div class="hero-image"></div>
+        </div>
+    </section>
+
+    <!-- About IBC -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Indian Business Circle</h2>
+                <p class="section-subtitle">IBC is not a meetup group or media company. We're building a trusted ecosystem where business relationships, learning, and visibility compound year after year.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Four Engines That Build Cash Flow and Authority</h3>
+                    <p>IBC combines curated community, practical learning, high-quality networking, and media into a credibility-driven flywheel model.</p>
+                    
+                    <div class="about-points">
+                        <div class="about-point">
+                            <h4>Curated Membership</h4>
+                            <p>Quality-controlled network of Indian founders and professionals in Dubai.</p>
+                        </div>
+                        <div class="about-point">
+                            <h4>Practical Workshops</h4>
+                            <p>Business-focused learning sessions with actionable insights.</p>
+                        </div>
+                        <div class="about-point">
+                            <h4>High-Quality Networking</h4>
+                            <p>Closed-door, curated events that foster meaningful connections.</p>
+                        </div>
+                        <div class="about-point">
+                            <h4>IBC Stories Platform</h4>
+                            <p>Monetized founder stories and interviews with editorial credibility.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue Engines (Membership, Workshops, Stories, Newsletter) -->
+    <section id="membership">
+        <div class="container">
+            <div class="section-header">
+                <h2>Revenue Engines</h2>
+                <p class="section-subtitle">Four predictable cash flow streams with high margins and capital-light operations.</p>
+            </div>
+            
+            <div class="engines-grid">
+                <div class="engine-card">
+                    <div class="engine-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Membership Engine</h3>
+                    <p>Annual paid membership with closed-door curated networking, preferential workshop access, and one complimentary IBC Story per year. Quality control through rigorous curation.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <div class="engine-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Events & Workshops</h3>
+                    <p>Curated business workshops and high-signal networking events. Revenue from tickets and sponsorships with variable costs allowing profit per event.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <div class="engine-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>IBC Stories</h3>
+                    <p>Monetize founder stories with credibility. Paid written stories and video interviews with a pay-per-story model generating high-margin, upfront revenue while preserving editorial integrity.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <div class="engine-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Newsletter Sponsorship</h3>
+                    <p>Targeted founder newsletter with single sponsor per email priced at AED 5,000 per campaign. Scales with audience growth and has low incremental costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model -->
+    <section class="revenue-model" id="business-model">
+        <div class="container">
+            <div class="section-header">
+                <h2>Diversified Revenue Model</h2>
+                <p class="section-subtitle">Capital-light, predictable cash flow with high margins and clear financial logic.</p>
+            </div>
+            
+            <div class="revenue-grid">
+                <div class="revenue-list">
+                    <div class="revenue-item">
+                        <div class="revenue-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="revenue-text">
+                            <h4>Memberships</h4>
+                            <p>Annual fees from founders and professionals</p>
+                        </div>
+                    </div>
+                    
+                    <div class="revenue-item">
+                        <div class="revenue-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="revenue-text">
+                            <h4>Events & Workshops</h4>
+                            <p>Sponsored and paid learning sessions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="revenue-item">
+                        <div class="revenue-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="revenue-text">
+                            <h4>IBC Stories</h4>
+                            <p>Paid founder stories and interviews</p>
+                        </div>
+                    </div>
+                    
+                    <div class="revenue-item">
+                        <div class="revenue-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="revenue-text">
+                            <h4>Newsletter Sponsorships</h4>
+                            <p>Brands sponsor emails at AED 5,000 per campaign</p>
+                        </div>
+                    </div>
+                    
+                    <div class="revenue-item">
+                        <div class="revenue-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="revenue-text">
+                            <h4>Brand Partnerships</h4>
+                            <p>Strategic collaborations with aligned businesses</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Financial Highlights</h3>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Capital-light setup with minimal fixed costs</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Predictable recurring revenue streams</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>65% net margin in Year 1</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Immediate cash flow from day one</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Scalable model with operating leverage</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investors -->
+    <section id="investors">
+        <div class="container">
+            <div class="section-header">
+                <h2>Clear Investor Returns</h2>
+                <p class="section-subtitle">Transparent cash flow distribution and equity upside via SAFE investment structure.</p>
+            </div>
+            
+            <div class="engines-grid">
+                <div class="engine-card">
+                    <div class="engine-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>100% Annual Profit Distribution</h3>
+                    <p>IBC distributes 100% of annual net profit every year with 50% going to the founder and 50% to investors. No retention or ambiguity.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <div class="engine-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>SAFE Investment Structure</h3>
+                    <p>Simple Agreement for Future Equity with a valuation cap of AED 3.8M and 20% discount. Equity upside is separate from dividend returns.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <div class="engine-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Transparent Cash Flow Model</h3>
+                    <p>Clear financial logic showing how capital turns into cash flow and long-term value. Year 1 net profit: AED 696,000 (65% margin).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder -->
+    <section id="founder">
+        <div class="container">
+            <div class="section-header">
+                <h2>Founder</h2>
+                <p class="section-subtitle">Driving progress at scale with global experience across strategy, technology, and transformation.</p>
+            </div>
+            
+            <div class="founder-profile">
+                <div class="founder-image"></div>
+                
+                <div class="founder-details">
+                    <h3>Praveen Kumar</h3>
+                    <p class="founder-title">Founder - Indian Business Circle</p>
+                    <p>Praveen has over 16 years of global experience across the US, Middle East, and Europe, working across strategy, technology, and transformation. He is the founder of Novus Ventures and operates across four companies spanning technology, print infrastructure, financial systems, and community.</p>
+                    
+                    <div class="founder-experience">
+                        <div class="experience-item">
+                            <h4>Global Experience</h4>
+                            <p>16+ years across US, Middle East, and Europe</p>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Expertise</h4>
+                            <p>Strategy, technology, and transformation</p>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Novus Ventures</h4>
+                            <p>Founder of Novus Ventures</p>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Multi-Sector Leadership</h4>
+                            <p>Leads four companies across diverse sectors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Apply -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact & Apply</h2>
+                <p class="section-subtitle">Join the IBC ecosystem as a member, sponsor, or investor.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                        <form id="inquiryForm">
+                            <div class="form-group">
+                                <label for="inquiryType">I'm interested in:</label>
+                                <select id="inquiryType" name="inquiryType" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="membership">Membership Application</option>
+                                    <option value="investor">Investor Inquiry</option>
+                                    <option value="sponsorship">Brand Sponsorship</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company / Organization</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message / Inquiry Details</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary" style="width: 100%;">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <h4>Membership Application</h4>
+                        <p>Apply for annual curated membership with access to networking, workshops, and media visibility.</p>
+                        <a href="#contact" class="btn-secondary" style="margin-top: 15px; display: inline-block;">Apply Now</a>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <h4>Investor Inquiry</h4>
+                        <p>Learn about our SAFE investment structure, dividend distribution policy, and financial projections.</p>
+                        <a href="#investors" class="btn-secondary" style="margin-top: 15px; display: inline-block;">View Details</a>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <h4>Brand Sponsorship</h4>
+                        <p>Explore newsletter sponsorships, event partnerships, and brand alignment opportunities.</p>
+                        <a href="#contact" class="btn-secondary" style="margin-top: 15px; display: inline-block;">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="footer-logo-circle">IBC</div>
+                        <div class="footer-logo-text">Indian Business Circle</div>
+                    </div>
+                    <p>Long-term business infrastructure for Indian founders and professionals in Dubai.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About IBC</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#business-model">Business Model</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Engines</h4>
+                    <ul class="footer-links">
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#business-model">Workshops & Events</a></li>
+                        <li><a href="#business-model">IBC Stories</a></li>
+                        <li><a href="#business-model">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#investors">Investors</a></li>
+                        <li><a href="#founder">Founder</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">Apply</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Indian Business Circle. All rights reserved. | Dubai, UAE</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+        
+        // Form submission
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const inquiryType = document.getElementById('inquiryType').value;
+            const name = document.getElementById('fullName').value;
+            
+            alert(`Thank you ${name}! Your ${inquiryType} inquiry has been submitted. We'll contact you shortly.`);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
